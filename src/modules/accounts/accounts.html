@@ -1,0 +1,35 @@
+<div id="content">
+  <div class="left-section">
+    <div class="header">
+      <strong>Accounts</strong>
+      <div class="actions">
+        <button ng-click="ctrl.addAccount()">Add Account</button>
+        <button ng-click="ctrl.refreshAccounts()">Refresh</button>
+      </div>
+    </div>
+    <table>
+      <tbody>
+        <tr>
+          <th ng-repeat="column in ::ctrl.columns" ng-class="{ left: $first }">
+            {{ column }}
+          </th>
+        </tr>
+        <tr ng-repeat="account in ctrl.accounts track by account.name">
+          <td class="left">{{ account.name }}</td>
+          <td>{{ account.marketValue | currency }}</td>
+          <td>{{ account.cash | currency }}</td>
+          <td>
+            <div class="legend" style="background-color: {{ account.legend }}"></div>
+          </td>
+        </tr>
+        <tr class="totals">
+          <td colspan="{{ ::ctrl.columns - 3 }}"></td>
+          <td><strong class="ng-binding">{{ ctrl.totals.marketValue | currency }}</strong></td>
+          <td><strong class="ng-binding">{{ ctrl.totals.cash | currency }}</strong></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="right-section"></div>
+</div>

@@ -1,0 +1,65 @@
+@import "../../styles/theme.css";
+
+table {
+  th {
+    background: #ccc;
+    padding: calc($base_margin / 2);
+  }
+  td {
+    .legend {
+      display: inline-block;
+    }
+    .legend {
+        width: 30px;
+        height: 16px;
+    }
+  }
+  tr.totals td {
+    border-top: 3px solid $table_background;
+    border-bottom: none;
+  }
+}
+
+#content {
+  display: flex;
+  margin-top: calc($base_margin * 2);
+
+  .left-section {
+    flex: 1;
+    margin-right: calc($base_margin * 2);
+
+    .header {
+      height: 30px;
+      display: flex;
+      font-size: 20px;
+      padding-top: 8px;
+
+      button {
+        height: 25px;
+      }
+
+      & > .actions {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        button:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .right-section {
+    width: 300px;
+    background: $table_background;
+
+    .chart {
+      height: 300px;
+    }
+
+    .help-label {
+      padding: $base_padding;
+    }
+  }
+}

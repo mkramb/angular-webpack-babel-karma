@@ -1,0 +1,29 @@
+@import "../../styles/theme.css";
+
+header {
+  display: flex;
+  background: $background_active;
+  padding: calc($base_padding * 3) calc($base_padding * 2);
+
+  .logo {
+    h1 {
+      margin: 3px 0px;
+    }
+
+    i {
+      font-size: 0.8rem;
+      padding-left: $base_padding;
+    }
+  }
+
+  .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      background: $background_header_active;
+      color: white;
+    }
+  }
+}

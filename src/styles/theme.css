@@ -1,0 +1,18 @@
+$width: 1000px;
+$base_padding: 10px;
+$base_margin: 10px;
+
+$background: white;
+$background_active: orange;
+$background_header_active: orangered;
+
+$font: "Helvetica Neue", "Arial", "sans-serif";
+$font_size: 14px;
+
+$button_width: 100px;
+$button_shadow: 1px 1px 3px #333;
+$button_border: 0px;
+$button_color: white;
+
+$table_border: 1px solid #eee;
+$table_background: #ccc;

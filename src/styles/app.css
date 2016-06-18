@@ -1,0 +1,45 @@
+@import "./theme.css";
+
+body {
+  background-color: $background;
+  font-size: $font_size;
+  font-family: $font;
+  max-width: $width;
+  margin: 0 auto;
+}
+
+button {
+  width: $button_width;
+  margin-right: $base_padding;
+  background: $background_active;
+  border: $button_border;
+  color: $button_color;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: $base_margin;
+
+  tr,
+  td {
+    padding: calc($base_margin / 2);
+    border-bottom: $table_border;
+    text-align: right;
+  }
+
+  th.left,
+  td.left {
+    text-align: left;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
