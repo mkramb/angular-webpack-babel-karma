@@ -10,6 +10,7 @@ npm install
 
 ```sh
 npm run dev
+npm test
 ```
 
 ### Build binary
