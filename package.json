@@ -1,5 +1,5 @@
 {
-  "name": "bullsfirst-2015-fixed",
+  "name": "angular-webpack-babel-karma",
   "version": "1.0.0",
   "scripts": {
     "build": "rm -fr ./dist && node node_modules/.bin/webpack",
